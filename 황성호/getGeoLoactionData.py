@@ -4,6 +4,7 @@ import json
 def get_request_url(url):
     pass
 
+# 주소 입력 후 해당 주소의 위도, 경도 값 리턴
 def GetGeoLoactionData(addr):
     baseUrl = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode"
     paraData = "?query=%s" % urllib.parse.quote(addr)
