@@ -1,7 +1,7 @@
 import urllib.request
 import json
 
-def get_request_url(url):
+def Get_Request_NaverUrl(url):
     pass
 
 # 주소 입력 후 해당 주소의 위도, 경도 값 리턴
@@ -10,7 +10,7 @@ def GetGeoLoactionData(addr):
     paraData = "?query=%s" % urllib.parse.quote(addr)
     resultUrl = baseUrl + paraData
 
-    resultData = get_request_url(resultUrl)
+    resultData = Get_Request_NaverUrl(resultUrl)
 
     tempData = []
 
